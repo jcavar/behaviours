@@ -23,6 +23,8 @@
 		C7EE8CEB195E09DD00EA319F /* JCACallBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EE8CE5195E09DD00EA319F /* JCACallBehaviour.m */; };
 		C7EE8CEC195E09DD00EA319F /* JCAMailBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EE8CE7195E09DD00EA319F /* JCAMailBehaviour.m */; };
 		C7EE8CED195E09DD00EA319F /* JCASMSBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EE8CE9195E09DD00EA319F /* JCASMSBehaviour.m */; };
+		C7EE8CF3195EB56900EA319F /* JCAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EE8CF1195EB56900EA319F /* JCAViewController.m */; };
+		C7EE8CF4195EB56900EA319F /* JCAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7EE8CF2195EB56900EA319F /* JCAViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,9 @@
 		C7EE8CE7195E09DD00EA319F /* JCAMailBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAMailBehaviour.m; sourceTree = "<group>"; };
 		C7EE8CE8195E09DD00EA319F /* JCASMSBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCASMSBehaviour.h; sourceTree = "<group>"; };
 		C7EE8CE9195E09DD00EA319F /* JCASMSBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCASMSBehaviour.m; sourceTree = "<group>"; };
+		C7EE8CF0195EB56900EA319F /* JCAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAViewController.h; sourceTree = "<group>"; };
+		C7EE8CF1195EB56900EA319F /* JCAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAViewController.m; sourceTree = "<group>"; };
+		C7EE8CF2195EB56900EA319F /* JCAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCAViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +129,9 @@
 				C7EE8CE1195E09DD00EA319F /* Behaviours */,
 				C7EE8CB7195E08AD00EA319F /* Images.xcassets */,
 				C7EE8CAC195E08AD00EA319F /* Supporting Files */,
+				C7EE8CF0195EB56900EA319F /* JCAViewController.h */,
+				C7EE8CF1195EB56900EA319F /* JCAViewController.m */,
+				C7EE8CF2195EB56900EA319F /* JCAViewController.xib */,
 			);
 			path = BehavioursExample;
 			sourceTree = "<group>";
@@ -250,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7EE8CB0195E08AD00EA319F /* InfoPlist.strings in Resources */,
+				C7EE8CF4195EB56900EA319F /* JCAViewController.xib in Resources */,
 				C7EE8CB8195E08AD00EA319F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +283,7 @@
 				C7EE8CED195E09DD00EA319F /* JCASMSBehaviour.m in Sources */,
 				C7EE8CB2195E08AD00EA319F /* main.m in Sources */,
 				C7EE8CEA195E09DD00EA319F /* JCABehaviour.m in Sources */,
+				C7EE8CF3195EB56900EA319F /* JCAViewController.m in Sources */,
 				C7EE8CB6195E08AD00EA319F /* JCAAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

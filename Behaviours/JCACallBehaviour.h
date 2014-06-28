@@ -9,6 +9,6 @@
 
 @interface JCACallBehaviour : JCABehaviour
 
-@property (copy, nonatomic) NSString *modelKeyPath;
+@property (copy, nonatomic) NSString *callNumber;
 
 @end

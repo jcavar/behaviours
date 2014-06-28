@@ -16,12 +16,12 @@
 
 @implementation JCAMailBehaviour
 
-- (IBAction)buttonMailTouchUpInside:(id)sender {
+- (IBAction)presentMail {
     
     if ([MFMailComposeViewController canSendMail]) {
         MFMailComposeViewController *mailComposeViewController = [[MFMailComposeViewController alloc] init];
         mailComposeViewController.mailComposeDelegate = self;
-        mailComposeViewController.toRecipients = @[[self.owner valueForKeyPath:self.modelKeyPath]];
+        mailComposeViewController.toRecipients = @[[self.owner valueForKeyPath:self.toRecepientKeyPath]];
         [self.owner presentViewController:mailComposeViewController animated:YES completion:nil];
     } else {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Mail not available" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];

@@ -16,12 +16,12 @@
 
 @implementation JCASMSBehaviour
 
-- (IBAction)buttonSMSTouchUpInside:(id)sender {
+- (IBAction)presentSMS {
     
     if ([MFMessageComposeViewController canSendText]) {
         MFMessageComposeViewController *messageComposeViewController = [[MFMessageComposeViewController alloc] init];
         messageComposeViewController.messageComposeDelegate = self;
-        messageComposeViewController.recipients = @[[[self.owner valueForKeyPath:self.modelKeyPath] lastObject]];
+        messageComposeViewController.recipients = @[self.smsNumber];
         [self.owner presentViewController:messageComposeViewController animated:YES completion:nil];
     } else {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"SMS not available" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];

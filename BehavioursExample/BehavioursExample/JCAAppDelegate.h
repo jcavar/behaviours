@@ -3,7 +3,7 @@
 //  BehavioursExample
 //
 //  Created by Josip Ćavar on 27/06/14.
-//  Copyright (c) 2014 Planet 1107. All rights reserved.
+//  Copyright (c) 2014 Josip Ćavar. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -9,13 +9,13 @@
 
 @implementation JCACallBehaviour
 
-- (IBAction)buttonCallTouchUpInside:(id)sender {
+- (IBAction)call {
     
-    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@", [[self.owner valueForKeyPath:self.modelKeyPath] lastObject]]];
+    NSURL *phoneUrl = [NSURL URLWithString:[NSString  stringWithFormat:@"telprompt:%@", self.callNumber]];
     if ([[UIApplication sharedApplication] canOpenURL:phoneUrl]) {
         [[UIApplication sharedApplication] openURL:phoneUrl];
     } else {
-        [[[UIAlertView alloc]initWithTitle:@"Error" message:@"Call is not available!!!" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Call is not available!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     }
 }
 

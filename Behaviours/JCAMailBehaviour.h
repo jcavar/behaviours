@@ -9,6 +9,6 @@
 
 @interface JCAMailBehaviour : JCABehaviour
 
-@property (copy, nonatomic) NSString *modelKeyPath;
+@property (copy, nonatomic) NSString *toRecepientKeyPath;
 
 @end

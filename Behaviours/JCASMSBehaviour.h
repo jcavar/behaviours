@@ -9,6 +9,6 @@
 
 @interface JCASMSBehaviour : JCABehaviour
 
-@property (copy, nonatomic) NSString *modelKeyPath;
+@property (copy, nonatomic) NSString *smsNumber;
 
 @end
