@@ -15,9 +15,6 @@
 		C7EE8CB2195E08AD00EA319F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EE8CB1195E08AD00EA319F /* main.m */; };
 		C7EE8CB6195E08AD00EA319F /* JCAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EE8CB5195E08AD00EA319F /* JCAAppDelegate.m */; };
 		C7EE8CB8195E08AD00EA319F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EE8CB7195E08AD00EA319F /* Images.xcassets */; };
-		C7EE8CBF195E08AD00EA319F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EE8CBE195E08AD00EA319F /* XCTest.framework */; };
-		C7EE8CC0195E08AD00EA319F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EE8CA5195E08AD00EA319F /* Foundation.framework */; };
-		C7EE8CC1195E08AD00EA319F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EE8CA9195E08AD00EA319F /* UIKit.framework */; };
 		C7EE8CEA195E09DD00EA319F /* JCABehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EE8CE3195E09DD00EA319F /* JCABehaviour.m */; };
 		C7EE8CEB195E09DD00EA319F /* JCACallBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EE8CE5195E09DD00EA319F /* JCACallBehaviour.m */; };
 		C7EE8CEC195E09DD00EA319F /* JCAMailBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EE8CE7195E09DD00EA319F /* JCAMailBehaviour.m */; };
@@ -25,16 +22,6 @@
 		C7EE8CF3195EB56900EA319F /* JCAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EE8CF1195EB56900EA319F /* JCAViewController.m */; };
 		C7EE8CF4195EB56900EA319F /* JCAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7EE8CF2195EB56900EA319F /* JCAViewController.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C7EE8CC2195E08AD00EA319F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C7EE8C9A195E08AD00EA319F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C7EE8CA1195E08AD00EA319F;
-			remoteInfo = BehavioursExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C70FE0E519C62D9D002FCA21 /* JCACameraGalleryBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCACameraGalleryBehaviour.h; sourceTree = "<group>"; };
@@ -50,7 +37,6 @@
 		C7EE8CB4195E08AD00EA319F /* JCAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAAppDelegate.h; sourceTree = "<group>"; };
 		C7EE8CB5195E08AD00EA319F /* JCAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAAppDelegate.m; sourceTree = "<group>"; };
 		C7EE8CB7195E08AD00EA319F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C7EE8CBD195E08AD00EA319F /* BehavioursExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BehavioursExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EE8CBE195E08AD00EA319F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C7EE8CE2195E09DD00EA319F /* JCABehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCABehaviour.h; sourceTree = "<group>"; };
 		C7EE8CE3195E09DD00EA319F /* JCABehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCABehaviour.m; sourceTree = "<group>"; };
@@ -76,16 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7EE8CBA195E08AD00EA319F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7EE8CBF195E08AD00EA319F /* XCTest.framework in Frameworks */,
-				C7EE8CC1195E08AD00EA319F /* UIKit.framework in Frameworks */,
-				C7EE8CC0195E08AD00EA319F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				C7EE8CA2195E08AD00EA319F /* BehavioursExample.app */,
-				C7EE8CBD195E08AD00EA319F /* BehavioursExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,24 +157,6 @@
 			productReference = C7EE8CA2195E08AD00EA319F /* BehavioursExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C7EE8CBC195E08AD00EA319F /* BehavioursExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C7EE8CD1195E08AD00EA319F /* Build configuration list for PBXNativeTarget "BehavioursExampleTests" */;
-			buildPhases = (
-				C7EE8CB9195E08AD00EA319F /* Sources */,
-				C7EE8CBA195E08AD00EA319F /* Frameworks */,
-				C7EE8CBB195E08AD00EA319F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C7EE8CC3195E08AD00EA319F /* PBXTargetDependency */,
-			);
-			name = BehavioursExampleTests;
-			productName = BehavioursExampleTests;
-			productReference = C7EE8CBD195E08AD00EA319F /* BehavioursExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,11 +166,6 @@
 				CLASSPREFIX = JCA;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Planet 1107";
-				TargetAttributes = {
-					C7EE8CBC195E08AD00EA319F = {
-						TestTargetID = C7EE8CA1195E08AD00EA319F;
-					};
-				};
 			};
 			buildConfigurationList = C7EE8C9D195E08AD00EA319F /* Build configuration list for PBXProject "BehavioursExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -228,7 +180,6 @@
 			projectRoot = "";
 			targets = (
 				C7EE8CA1195E08AD00EA319F /* BehavioursExample */,
-				C7EE8CBC195E08AD00EA319F /* BehavioursExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,13 +192,6 @@
 				C7EE8CB0195E08AD00EA319F /* InfoPlist.strings in Resources */,
 				C7EE8CF4195EB56900EA319F /* JCAViewController.xib in Resources */,
 				C7EE8CB8195E08AD00EA319F /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7EE8CBB195E08AD00EA319F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,22 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7EE8CB9195E08AD00EA319F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C7EE8CC3195E08AD00EA319F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C7EE8CA1195E08AD00EA319F /* BehavioursExample */;
-			targetProxy = C7EE8CC2195E08AD00EA319F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C7EE8CAE195E08AD00EA319F /* InfoPlist.strings */ = {
@@ -394,46 +323,6 @@
 			};
 			name = Release;
 		};
-		C7EE8CD2195E08AD00EA319F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BehavioursExample.app/BehavioursExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BehavioursExample/BehavioursExample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "BehavioursExampleTests/BehavioursExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		C7EE8CD3195E08AD00EA319F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BehavioursExample.app/BehavioursExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BehavioursExample/BehavioursExample-Prefix.pch";
-				INFOPLIST_FILE = "BehavioursExampleTests/BehavioursExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -451,15 +340,6 @@
 			buildConfigurations = (
 				C7EE8CCF195E08AD00EA319F /* Debug */,
 				C7EE8CD0195E08AD00EA319F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C7EE8CD1195E08AD00EA319F /* Build configuration list for PBXNativeTarget "BehavioursExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C7EE8CD2195E08AD00EA319F /* Debug */,
-				C7EE8CD3195E08AD00EA319F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
