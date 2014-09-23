@@ -27,14 +27,16 @@
     
     UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
     imagePickerController.delegate = self;
+    UIImagePickerControllerSourceType sourceType;
     if (buttonIndex == 0) {
-        imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     } else if (buttonIndex == 1) {
-        imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+        sourceType = UIImagePickerControllerSourceTypeCamera;
     } else {
         return;
     }
-    if ([UIImagePickerController isSourceTypeAvailable:imagePickerController.sourceType]) {
+    if ([UIImagePickerController isSourceTypeAvailable:sourceType]) {
+        imagePickerController.sourceType = sourceType;
         [self.owner presentViewController:imagePickerController animated:YES completion:nil];
     } else {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Source type not available on this device" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
