@@ -31,6 +31,8 @@
         imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     } else if (buttonIndex == 1) {
         imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+    } else {
+        return;
     }
     if ([UIImagePickerController isSourceTypeAvailable:imagePickerController.sourceType]) {
         [self.owner presentViewController:imagePickerController animated:YES completion:nil];
